@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.encode.MainController">
+  <children>
+    <Button layoutX="61.0" layoutY="115.0" mnemonicParsing="false" onAction="#Encodebutton" text="Encode" />
+    <Button layoutX="473.0" layoutY="115.0" mnemonicParsing="false" onAction="#DecodeButton" text="Decode" />
+    <Button layoutX="56.0" layoutY="259.0" mnemonicParsing="false" onAction="#DisplayFrequenciesButton" text="Display Frequencies" />
+    <Button layoutX="48.0" layoutY="342.0" mnemonicParsing="false" onAction="#DisplayHuffmanCodeButton" text="Display Huffman Code" />
+    <Button layoutX="51.0" layoutY="303.0" mnemonicParsing="false" onAction="#DisplayHuffmanTreeButton" text="Display Huffman Tree" />
+    <Button layoutX="357.0" layoutY="259.0" mnemonicParsing="false" onAction="#SaveHuffmanTreeButton" text="Save Huffman Tree" />
+    <Button layoutX="356.0" layoutY="303.0" mnemonicParsing="false" onAction="#LoadHuffmanTreeButton" text="Load Huffman Tree" />
+    <TextArea fx:id="Output" layoutX="200.0" layoutY="41.0" prefHeight="200.0" prefWidth="200.0" />
+    <TextField fx:id="plaintext" layoutX="21.0" layoutY="77.0" />
+    <TextField fx:id="Decodetext" layoutX="427.0" layoutY="77.0" />
+    <Label layoutX="54.0" layoutY="49.0" text="Plain text string" />
+    <Label layoutX="450.0" layoutY="49.0" text="Encoded text string" />
+    <Label layoutX="281.0" layoutY="14.0" text="Output" />
+    <Button layoutX="397.0" layoutY="342.0" mnemonicParsing="false" onAction="#ExitButton" text="Exit" />
+  </children>
+</AnchorPane>
